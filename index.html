@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JSON Data from Cloudflare Workers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #dataDisplay {
+            white-space: pre-wrap; /* 保持 JSON 格式 */
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
 </head>
 <body>
     <h1>JSON Data from Cloudflare Workers</h1>
     <button id="fetchData">Fetch Data</button>
-    <pre id="dataDisplay"></pre>
+    <pre id="dataDisplay">来自 Cloudflare Workers 的 JSON 数据</pre>
 
     <script>
         document.getElementById('fetchData').addEventListener('click', () => {
